@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parth's Site</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <h1>Hello Parth!</h1>
+  <p>This is your Flask-powered HTML page.</p>
+
+  <form action="/submit" method="post">
+    <label for="username">Enter your name:</label>
+    <input type="text" id="username" name="username">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
